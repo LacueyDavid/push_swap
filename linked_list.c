@@ -6,7 +6,7 @@
 /*   By: dlacuey <dlacuey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/12 04:22:16 by dlacuey           #+#    #+#             */
-/*   Updated: 2023/07/13 16:56:28 by dlacuey          ###   ########.fr       */
+/*   Updated: 2023/08/04 14:46:58 by dlacuey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ int	find_position(int value, t_arrays *arrays)
 	return (-1);
 }
 
+// test au milieu de la boucle le malloc
 void	create_linked_list(t_node *stack_a, t_arrays *arrays)
 {
 	size_t	index;
@@ -69,15 +70,18 @@ void	create_linked_list(t_node *stack_a, t_arrays *arrays)
 	tmp = stack_a;
 	while (index < arrays->size)
 	{
+		index++;
 		stack_a->next = new_node();
 		if (stack_a->next == NULL)
-			return (clear_linked_list(head, arrays->size));
-		stack_a->value = arrays->not_sorted[index];
+		{
+			head->value = -1;
+			return (clear_linked_list(head, index));
+		}
+		stack_a->value = arrays->not_sorted[index - 1];
 		stack_a->position = find_position(stack_a->value, arrays);
 		stack_a->next->prev = stack_a;
 		tmp = stack_a;
 		stack_a = stack_a->next;
-		index++;
 	}
 	free(tmp->next);
 	tmp->next = head;

@@ -6,7 +6,7 @@
 /*   By: dlacuey <dlacuey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 22:30:24 by dlacuey           #+#    #+#             */
-/*   Updated: 2023/07/17 14:31:08 by dlacuey          ###   ########.fr       */
+/*   Updated: 2023/08/04 17:17:27 by dlacuey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,44 +40,30 @@ void	rotate_a_and_b(t_stacks *stacks)
 	print_str("rr\n");
 }
 
-void	reverse_rotate_a(t_stacks *stacks)
+void	last_swap_a(t_stacks *stacks)
 {
-	stacks->head_a = stacks->tail_a;
-	stacks->a = stacks->tail_a;
-	stacks->tail_a = stacks->tail_a->prev;
-	print_str("rra\n");
-}
+	t_node	*tmp;
 
-void	reverse_rotate_b(t_stacks *stacks)
-{
-	stacks->head_b = stacks->tail_b;
-	stacks->b = stacks->tail_b;
-	stacks->tail_b = stacks->tail_b->prev;
-	print_str("rrb\n");
-}
-
-void	reverse_rotate_a_and_b(t_stacks *stacks)
-{
-	stacks->head_a = stacks->tail_a;
-	stacks->a = stacks->tail_a;
-	stacks->tail_a = stacks->tail_a->prev;
-	stacks->head_b = stacks->tail_b;
-	stacks->b = stacks->tail_b;
-	stacks->tail_b = stacks->tail_b->prev;
-	print_str("rrr\n");
-}
-
-void	swap_a(t_stacks *stacks)
-{
-	t_node *tmp;
 	tmp = stacks->head_a;
 	stacks->head_a = stacks->tail_a;
 	stacks->tail_a = tmp;
-	// stacks->head_a->next = stacks->head_a->next->next;
-	// stacks->head_a->prev = stacks->head_a->next;
-	// stacks->head_a->prev->prev = stacks->tail_a;
-	// stacks->tail_a->next = stacks->head_a->prev;
-	// stacks->head_a->next->prev = stacks->head_a;
 	print_str("sa\n");
 }
 
+void	swap_with_next(t_node *node)
+{
+	t_node	*tmp;
+	t_node	*node_next;
+	t_node	*node_prev;
+
+	node_prev = node->prev;
+	node_next = node->next->next;
+	tmp = node->next;
+	node_prev->next = tmp;
+	tmp->next = node;
+	node->next = node_next;
+	node_next->prev = node;
+	node->prev = tmp;
+	tmp->prev = node_prev;
+	print_str("sa\n");
+}

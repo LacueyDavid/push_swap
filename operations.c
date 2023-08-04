@@ -6,7 +6,7 @@
 /*   By: dlacuey <dlacuey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 02:57:53 by dlacuey           #+#    #+#             */
-/*   Updated: 2023/07/14 05:35:12 by dlacuey          ###   ########.fr       */
+/*   Updated: 2023/07/17 17:15:04 by dlacuey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ void	push_b(t_stacks *stacks)
 	stacks->size_b += 1;
 	print_str("pb\n");
 }
+
 void	push_a(t_stacks *stacks)
 {
 	t_node	*head_b;

@@ -6,7 +6,7 @@
 /*   By: dlacuey <dlacuey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 19:15:27 by dlacuey           #+#    #+#             */
-/*   Updated: 2023/07/12 22:51:51 by dlacuey          ###   ########.fr       */
+/*   Updated: 2023/08/04 15:00:12 by dlacuey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	malloc_array_not_sorted_and_sorted_failed(t_arrays *arrays)
 int	malloc_arrays_failed(t_arrays **arrays, char **argv)
 {
 	*arrays = malloc(sizeof(struct arrays));
-	if (arrays == NULL)
+	if (*arrays == NULL)
 		return (1);
 	(*arrays)->not_sorted = NULL;
 	(*arrays)->sorted = NULL;

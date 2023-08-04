@@ -6,7 +6,7 @@
 /*   By: dlacuey <dlacuey@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 00:01:31 by dlacuey           #+#    #+#             */
-/*   Updated: 2023/07/13 22:34:19 by dlacuey          ###   ########.fr       */
+/*   Updated: 2023/07/17 19:32:18 by dlacuey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,11 @@ t_stacks	*init_stacks(char **argv)
 	create_linked_list(stacks->a, arrays);
 	stacks->tail_a = stacks->head_a->prev;
 	clear_arrays(arrays);
+	if (stacks->a->value == -1)
+	{
+		free(stacks->a);
+		free(stacks);
+		return (NULL);
+	}
 	return (stacks);
 }

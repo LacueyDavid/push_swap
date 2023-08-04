@@ -6,7 +6,7 @@
 #    By: dlacuey <dlacuey@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/10 21:05:04 by dlacuey           #+#    #+#              #
-#    Updated: 2023/07/13 22:58:41 by dlacuey          ###   ########.fr        #
+#    Updated: 2023/07/17 18:08:41 by dlacuey          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,11 @@ CFLAGS = -Wall -Wextra -Werror
 
 OBJS =												\
 													\
+				push_swap_bis.o						\
+				reverse_rotate.o					\
+				sum.o								\
+				exec.o								\
+				find.o								\
 				array.o								\
 				delete.o							\
 				error.o								\
