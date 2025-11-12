@@ -14,8 +14,7 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-OBJS =												\
-													\
+OBJS =			$(addprefix src/,					\
 				push_swap_bis.o						\
 				reverse_rotate.o					\
 				sum.o								\
@@ -37,8 +36,7 @@ OBJS =												\
 				push_swap_2.o						\
 				push_swap.o							\
 				rotate.o							\
-				stacks.o							\
-													\
+				stacks.o)							\
 
 NAME = push_swap
 
@@ -48,7 +46,7 @@ $(NAME): $(OBJS)
 	$(CC) -o $(NAME) $(OBJS)
 
 clean:
-	$(RM) $(OBJS) $(OBJS_BONUS)
+	$(RM) $(OBJS)
 
 fclean: clean
 	$(RM) $(NAME)

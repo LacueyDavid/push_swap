@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
-#include "operations.h"
+#include "../include/push_swap.h"
+#include "../include/operations.h"
 #include <limits.h>
 
 size_t	sum_of_rra(t_stacks *stacks, size_t good_a_position)

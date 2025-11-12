@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
-#include "operations.h"
+#include "../include/push_swap.h"
+#include "../include/operations.h"
 #include <limits.h>
 
 t_rotate_infos	*init_rotate_infos(void)

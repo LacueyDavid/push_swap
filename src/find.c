@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
-#include "operations.h"
+#include "../include/push_swap.h"
+#include "../include/operations.h"
 #include <limits.h>
 
 size_t	find_position_a(t_stacks *stacks, size_t position)

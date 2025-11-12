@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stacks.h"
-#include "libft.h"
+#include "../include/stacks.h"
+#include "../include/libft.h"
 
 void	rotate_a(t_stacks *stacks)
 {

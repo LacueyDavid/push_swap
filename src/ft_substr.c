@@ -9,7 +9,7 @@
 /*   Updated: 2023/07/11 07:09:38 by dlacuey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../include/libft.h"
 
 static char	*toobigstart(void)
 {

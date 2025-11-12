@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
-#include "operations.h"
+#include "../include/push_swap.h"
+#include "../include/operations.h"
 #include <limits.h>
 
 void	exec_rra_rb(t_rotate_infos *infos, t_stacks *stacks)

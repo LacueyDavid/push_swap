@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
-#include "operations.h"
+#include "../include/push_swap.h"
+#include "../include/operations.h"
 
 size_t	last_rotate_while_rrr(t_stacks *stacks)
 {

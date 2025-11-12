@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "array.h"
+#include "../include/array.h"
 
 void	clear_arrays(t_arrays *arrays)
 {

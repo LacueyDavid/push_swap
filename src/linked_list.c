@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "linked_list.h"
-#include "array.h"
+#include "../include/linked_list.h"
+#include "../include/array.h"
 
 void	clear_linked_list(t_node *stack, size_t size)
 {

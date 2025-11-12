@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "error.h"
-#include "push_swap.h"
-#include "linked_list.h"
-#include "array.h"
-#include "libft.h"
-#include "delete.h"
-#include "stacks.h"
+#include "../include/error.h"
+#include "../include/push_swap.h"
+#include "../include/linked_list.h"
+#include "../include/array.h"
+#include "../include/libft.h"
+#include "../include/delete.h"
+#include "../include/stacks.h"
 
 int	is_stacks_sorted(t_node *head, size_t size)
 {

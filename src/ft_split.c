@@ -9,7 +9,7 @@
 /*   Updated: 2023/07/11 07:08:36 by dlacuey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../include/libft.h"
 
 static size_t	strcount(char const *s, char c)
 {

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "delete.h"
+#include "../include/libft.h"
+#include "../include/delete.h"
 
 void	ft_arraycpy(int *dest, int *src, size_t size)
 {

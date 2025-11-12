@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
-#include "operations.h"
+#include "../include/push_swap.h"
+#include "../include/operations.h"
 
 void	push_top_or_bot(t_stacks *stacks, size_t size_divided,
 								size_t begin_size, size_t div)

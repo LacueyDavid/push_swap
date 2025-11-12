@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "error.h"
-#include "libft.h"
+#include "../include/error.h"
+#include "../include/libft.h"
 
 static	int	is_empty(char *str)
 {

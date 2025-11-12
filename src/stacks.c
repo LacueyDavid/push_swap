@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "linked_list.h"
-#include "stacks.h"
-#include "array.h"
-#include "delete.h"
+#include "../include/linked_list.h"
+#include "../include/stacks.h"
+#include "../include/array.h"
+#include "../include/delete.h"
 
 t_node	*init_stack(void)
 {

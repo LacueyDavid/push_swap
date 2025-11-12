@@ -9,7 +9,7 @@
 /*   Updated: 2023/07/12 21:21:09 by dlacuey          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../include/libft.h"
 
 int	is_bigger_than_int_max(char *str)
 {
